@@ -1,5 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import gestion_clientes_View from '@/views/gestion_clientes_View.vue'
+import IngresarCliente from '@/components/IngresarCliente.vue';
+import ListarClientes from '@/components/ListarClientes.vue';
+import CRUDCliente from '@/components/CRUDCliente.vue';
+import gestion_proveedores_View from '@/views/gestion_proveedores_View.vue'
+import IngresarProveedor from '@/components/IngresarProveedor.vue';
 
 const routes = [
   {
@@ -8,12 +14,43 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/Proveedores',
+    name: 'gestion_proveedores_View',
+    component: gestion_proveedores_View,
+
+    children: [
+      {
+        path: '/IngresarProveedor',
+        name: 'IngresarProveedor',
+        component: IngresarProveedor
+      },
+
+    ]
+
+  },
+
+  {
+    path: '/Clientes',
+    name: 'gestion_clientes_view',
+    component: gestion_clientes_View,
+
+    children: [
+      {
+        path: '/IngresarCliente', 
+        name: 'IngresarCliente', 
+        component: IngresarCliente
+      },
+      {
+        path: '/ListarClientes',
+        name: 'ListarClientes',
+        component: ListarClientes
+      },
+      {
+        path: '/CRUDCliente',
+        name: 'CRUDCliente',
+        component: CRUDCliente
+      }
+    ]
   }
 ]
 
