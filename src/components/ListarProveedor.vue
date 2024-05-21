@@ -1,16 +1,16 @@
 <template>
     <div id="ListarProveedores">
 
-        <h6 id="titulotbl">LISTADO PROVEEDORES</h6>
+        <h6 id="titulotbl">LISTADO DE PROVEEDORES</h6>
         <section id="s9">
             <br><br>
             <div class="scrollable-table">
                 <table>
                     <thead id="thead1">
                         <tr>
-                            <th>cod_proveedores</th>
-                            <th>nom_proveedores</th>
-                            <th>tel_proveedores</th>
+                            <th>CODIGO PROVEEDORES</th>
+                            <th>NUMERO PROVEEDORES</th>
+                            <th>TELEFONO PROVEEDORES</th>
                         </tr>
                     </thead>
                     <tbody id="tbody1">
