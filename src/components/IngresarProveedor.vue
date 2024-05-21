@@ -3,7 +3,7 @@
 
         <section id="s21">
             <table>
-                <caption id="capa21">INGRESAR NUEVO PROVEEDOR</caption>
+                <caption id="capa21">INGRESAR NUEVO PROVEEDORr</caption>
                 <tbody>
                     <tr><td></td></tr>
                     <tr>
