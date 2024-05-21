@@ -5,9 +5,9 @@
         <section id="s57">
             <nav class="navbar" role="toolbar" aria-label="Basic example">
               <form class="container-fluid justify-content-start btn-group">
-                <router-link id="btn22" to="/ListarClientes" class="btn boton" aria-current="page">LISTAR PROVEEDORES</router-link>
+                <router-link id="btn22" to="/ListarProveedor" class="btn boton" aria-current="page">LISTAR PROVEEDORES</router-link>
                 <router-link id="btn23" to="/IngresarProveedor" class="btn boton">NUEVO PROVEEDOR</router-link>
-                <router-link id="btn24" to="/CRUDCliente" class="btn boton">CONSULTAR PROVEEDORES</router-link>
+                <router-link id="btn24" to="/CRUDProveedor" class="btn boton">CONSULTAR PROVEEDORES</router-link>
               </form>
             </nav>
         </section>
@@ -20,18 +20,18 @@
   
   <script>
   // @ is an alias to /src
-  import ListarClientes from '@/components/ListarClientes.vue';
+  import ListarProveedor from '@/components/ListarProveedor.vue';
   import IngresarProveedor from '@/components/IngresarProveedor.vue';
-  import CRUDClientes from '@/components/CRUDCliente.vue';
+  import CRUDProveedor from '@/components/CRUDProveedor.vue';
 
 
   export default {
     name: 'Proveedores',
 
     components: {
-        ListarClientes,
+        ListarProveedor,
         IngresarProveedor,
-        CRUDClientes,
+        CRUDProveedor,
         
     },
   }

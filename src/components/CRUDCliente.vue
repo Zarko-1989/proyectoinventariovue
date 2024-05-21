@@ -8,7 +8,7 @@
                     <tr><td> </td></tr>
                     <tr>
                         <td><input id="in3" class="srch" type="search" placeholder="Cedula" v-model="Codigo"/></td>
-                        <td><button id="bt4" class="btnsrch" @click="consultar_clientes"><img id="img3" src="../assets/img/buscar.png" alt=""></button></td>
+                        <td><button id="bt4" class="btnsrch" @click="consultar_clientes"><img id="img3" src="../assets/img/buscar.png"></button></td>
                     </tr>
                     <tr><td> </td></tr>
                     <tr>
@@ -70,7 +70,7 @@
             const ListarClientes = computed(() => store.state.ListarClientes);
 
             function consultar_clientes(){
-                let index = ListarClientes.value.findIndex(cliente => cliente.cc_clientes = Codigo.value);
+                let index = ListarClientes.value.findIndex(cliente => cliente.cc_clientes == Codigo.value);
                 if (index !== -1){
                     Clientes.value.cc_clientes = ListarClientes.value[index].cc_clientes;
                     Clientes.value.nombres = ListarClientes.value[index].nombres;

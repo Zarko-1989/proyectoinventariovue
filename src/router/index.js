@@ -6,6 +6,8 @@ import ListarClientes from '@/components/ListarClientes.vue';
 import CRUDCliente from '@/components/CRUDCliente.vue';
 import gestion_proveedores_View from '@/views/gestion_proveedores_View.vue'
 import IngresarProveedor from '@/components/IngresarProveedor.vue';
+import CRUDProveedor from '@/components/CRUDProveedor.vue';
+import ListarProveedor from '@/components/ListarProveedor.vue';
 
 const routes = [
   {
@@ -23,6 +25,16 @@ const routes = [
         path: '/IngresarProveedor',
         name: 'IngresarProveedor',
         component: IngresarProveedor
+      },
+      {
+        path: '/CRUDProveedor',
+        name: 'CRUDProveedor',
+        component: CRUDProveedor
+      },
+      {
+        path: '/ListarProveedor',
+        name: 'ListarProveedor',
+        component: ListarProveedor
       },
 
     ]
